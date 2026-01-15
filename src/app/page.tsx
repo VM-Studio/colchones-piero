@@ -81,11 +81,11 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 sm:pt-32 md:pt-36 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 bg-white">
+      <section className="pt-24 sm:pt-32 md:pt-36 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-[#032858]" style={{ fontFamily: 'var(--font-poppins)' }}>
+              <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-[#032858]" style={{ fontFamily: 'var(--font-poppins)' }}>
                 Encontrá el colchón ideal para tu descanso
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed" style={{ fontFamily: 'var(--font-outfit)' }}>
@@ -109,7 +109,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-6 border-t border-gray-200">
+              <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-6 border-t border-gray-200 bg-[#027de1]/5 p-4 sm:p-6 rounded-lg">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <CheckCircle2 size={16} className="text-[#027de1] sm:w-[18px] sm:h-[18px]" />
@@ -168,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="productos" className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-b from-gray-50 to-white">
+      <section id="productos" className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <div className="inline-block mb-3 sm:mb-4">
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Local Section */}
-      <section id="local" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+      <section id="local" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             <div>
@@ -316,40 +316,52 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#027de1]">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4" style={{ fontFamily: 'var(--font-poppins)' }}>
+      <section id="contacto" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-[#027de1] to-[#0268c1]">
+        <div className="max-w-3xl mx-auto text-center text-white">
+          <div className="inline-block mb-2 sm:mb-3">
+            <span className="text-white/60 text-xs sm:text-sm font-medium tracking-wider uppercase">
+              Contacto
+            </span>
+          </div>
+          
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-light mb-3 sm:mb-4 tracking-tight" style={{ fontFamily: 'var(--font-poppins)' }}>
             ¿Tenés consultas?
           </h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-8 text-white/90" style={{ fontFamily: 'var(--font-outfit)' }}>
-            Escribinos o llamanos, estamos para ayudarte
+          <p className="text-sm sm:text-base text-white/80 mb-6 sm:mb-8 font-light leading-relaxed" style={{ fontFamily: 'var(--font-outfit)' }}>
+            Estamos para ayudarte a encontrar el colchón perfecto
           </p>
           
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6 sm:mb-8">
             <a
               href="tel:+541112345678"
-              className="bg-white text-[#027de1] px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-bold hover:bg-gray-50 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
-              style={{ fontFamily: 'var(--font-poppins)' }}
+              className="bg-white text-[#027de1] px-5 sm:px-6 py-2.5 rounded-lg font-medium hover:bg-white/95 transition-all flex items-center justify-center gap-2 text-sm"
+              style={{ fontFamily: 'var(--font-outfit)' }}
             >
-              <Phone size={18} className="sm:w-5 sm:h-5" />
-              11 1234-5678
+              <Phone size={16} className="sm:w-[18px] sm:h-[18px]" />
+              <span>11 1234-5678</span>
             </a>
             <a
               href="https://wa.me/541112345678"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
-              style={{ fontFamily: 'var(--font-poppins)' }}
+              className="bg-transparent text-white border border-white/30 px-5 sm:px-6 py-2.5 rounded-lg font-medium hover:bg-white/5 hover:border-white/50 transition-all flex items-center justify-center gap-2 text-sm"
+              style={{ fontFamily: 'var(--font-outfit)' }}
             >
-              <Mail size={18} className="sm:w-5 sm:h-5" />
-              WhatsApp
+              <Mail size={16} className="sm:w-[18px] sm:h-[18px]" />
+              <span>WhatsApp</span>
             </a>
+          </div>
+          
+          <div className="pt-4 border-t border-white/10">
+            <p className="text-white/60 text-xs font-light" style={{ fontFamily: 'var(--font-outfit)' }}>
+              Lunes a Viernes: 9:00 - 19:00 · Sábados: 9:00 - 13:00
+            </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#032858] text-white py-10 sm:py-12 px-4 sm:px-6">
+      <footer className="bg-[#032858] text-white py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
             <div>

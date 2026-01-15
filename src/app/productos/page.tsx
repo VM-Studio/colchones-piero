@@ -142,7 +142,7 @@ export default function ProductosPage() {
       </nav>
 
       {/* Hero Products */}
-      <section className="pt-24 sm:pt-28 md:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 bg-gradient-to-b from-blue-50 to-white">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto">
           <Link
             href="/"
@@ -192,7 +192,7 @@ export default function ProductosPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-8 sm:py-12 px-4 sm:px-6 bg-white">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="mb-4 sm:mb-6">
             <p className="text-gray-600 text-sm sm:text-base">
@@ -242,7 +242,7 @@ export default function ProductosPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-blue-50">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-blue-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2
             className="text-2xl sm:text-3xl font-bold text-[#032858] mb-3 sm:mb-4"
@@ -276,7 +276,7 @@ export default function ProductosPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#032858] text-white py-10 sm:py-12 px-4 sm:px-6">
+      <footer className="bg-[#032858] text-white py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
             <div>
